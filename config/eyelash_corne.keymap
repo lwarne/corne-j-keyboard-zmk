@@ -87,74 +87,6 @@
             #binding-cells = <0>;
             bindings = <&kp MINUS &kp MINUS>;
         };
-
-        mcr_lg_up: mcr_lg_up {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LG(UP)>;
-        };
-
-        mcr_lg_left: mcr_lg_left {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LG(LEFT)>;
-        };
-
-        mcr_lg_right: mcr_lg_right {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LG(RIGHT)>;
-        };
-    };
-
-    combos {
-        compatible = "zmk,combos";
-
-        left_bkt {
-            bindings = <&kp LEFT_BRACKET>;
-            key-positions = <4 3>;
-            timeout-ms = <50>;
-        };
-
-        right_bkt {
-            bindings = <&kp RBKT>;
-            key-positions = <7 8>;
-            timeout-ms = <50>;
-        };
-
-        left_par {
-            bindings = <&kp LEFT_PARENTHESIS>;
-            key-positions = <15 16>;
-            timeout-ms = <50>;
-        };
-
-        right_par {
-            bindings = <&kp RIGHT_PARENTHESIS>;
-            key-positions = <19 20>;
-            timeout-ms = <50>;
-        };
-
-        left_brace {
-            bindings = <&kp LEFT_BRACE>;
-            key-positions = <27 28>;
-            timeout-ms = <50>;
-        };
-
-        right_brace {
-            bindings = <&kp RIGHT_BRACE>;
-            key-positions = <32 31>;
-            timeout-ms = <50>;
-        };
-
-        bac {
-            bindings = <&kp BACKSLASH>;
-            key-positions = <5 6>;
-        };
-
-        pipe {
-            bindings = <&kp PIPE>;
-            key-positions = <17 18>;
-        };
     };
 
     keymap {
@@ -163,7 +95,7 @@
         default_layer_0 {
             display-name = "TARMAK2";
             bindings = <
-&kp LEFT_ARROW &mt RIGHT Q     &mt LG(UP) W    &mt LG(LEFT) F       &mt LG(RIGHT) R      &kp G                              &kp UP                &kp Y          &kp U             &kp I            &kp O            &kp LG(SPACE)           &kp UP_ARROW
+&kp LEFT_ARROW &hm RIGHT Q     &hm LG(UP) W    &hm LG(LEFT) F       &hm LG(RIGHT) R      &kp G                              &kp UP                &kp Y          &kp U             &kp I            &kp O            &kp LG(SPACE)           &kp UP_ARROW
 &kp LG(ENTER)  &hm LEFT_GUI A  &hm LEFT_ALT S  &hm LCTRL D          &hm LEFT_SHIFT T     &kp J               &kp LEFT  &kp ENTER  &kp RIGHT       &kp H          &hm RSHIFT N      &hm RCTRL E      &hm RIGHT_ALT L  &hm RGUI P              &kp DOWN_ARROW
 &kp LC(Z)      &kp Z           &kp X           &kp C                &ltq 3 V             &kp B       &kp SPACE              &kp DOWN              &kp K          &ltq 2 M          &kp F4           &kp QUESTION     &hm SEMICOLON ASTRK     &kp ESC
                                                &kp LS(ENTER)        &sl 1                &mt LSHIFT ENTER                                         &kp BACKSPACE  &kp SPACE         &kp TAB
