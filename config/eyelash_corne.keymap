@@ -98,7 +98,7 @@
 &kp LEFT_ARROW &hm RIGHT Q     &hm LG(UP) W    &hm LG(LEFT) F       &hm LG(RIGHT) R      &kp G                              &kp UP                &kp Y          &kp U             &kp I            &kp O            &kp LG(SPACE)           &kp UP_ARROW
 &kp LG(ENTER)  &hm LEFT_GUI A  &hm LEFT_ALT S  &hm LCTRL D          &hm LEFT_SHIFT T     &kp J               &kp LEFT  &kp ENTER  &kp RIGHT       &kp H          &hm RSHIFT N      &hm RCTRL E      &hm RIGHT_ALT L  &hm RGUI P              &kp DOWN_ARROW
 &kp LC(Z)      &kp Z           &kp X           &kp C                &ltq 3 V             &kp B       &kp SPACE              &kp DOWN              &kp K          &ltq 2 M          &kp F4           &kp QUESTION     &hm SEMICOLON ASTRK     &kp ESC
-                                               &kp LS(ENTER)        &sl 1                &mt LSHIFT ENTER                                         &kp BACKSPACE  &kp SPACE         &ltq 2 TABa
+                                               &kp LS(ENTER)        &sl 1                &mt LSHIFT ENTER                                         &kp BACKSPACE  &kp SPACE         &ltq 2 TAB
             >;
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
