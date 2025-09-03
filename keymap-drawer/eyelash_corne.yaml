@@ -39,7 +39,7 @@ layers:
   - $$mdi:arrow-down-bold$$
   - K
   - {t: M, h: NUM}
-  - F4
+  - NUM
   - '?'
   - {t: '*', h: ;}
   - $$mdi:keyboard-esc$$
@@ -50,12 +50,12 @@ layers:
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-tab$$', h: NUM}
   SYMBOL:
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:arrow-left-bold$$
   - '~'
   - '@'
   - {t: '[', s: '{'}
   - {t: ']', s: '}'}
-  - '|'
+  - $$mdi:arrow-right-bold$$
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:transfer$$', type: trans}
   - +
@@ -83,7 +83,7 @@ layers:
   - ^
   - '{'
   - '}'
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '|'
   - $$mdi:volume-off$$
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - '&'
@@ -137,7 +137,7 @@ layers:
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -157,7 +157,7 @@ layers:
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: Sft+Gui+4, s: Sft+Gui+$}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - F4
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
