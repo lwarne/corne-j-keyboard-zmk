@@ -55,9 +55,9 @@
             label = "LTQ";
             bindings = <&mo>, <&kp>;
             #binding-cells = <2>;
-            tapping-term-ms = <600>;
-            global-quick-tap;
-            quick-tap-ms = <400>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <180>;
+            flavor = "tap-preferred";
         };
 
     };
@@ -97,7 +97,7 @@
             bindings = <
 &kp LEFT_ARROW &hm RIGHT Q     &hm LG(UP) W    &hm LG(LEFT) F       &hm LG(RIGHT) R      &kp G                              &kp UP                &kp Y          &kp U             &kp I            &kp O            &kp LG(SPACE)           &kp UP_ARROW
 &kp LG(ENTER)  &hm LEFT_GUI A  &hm LEFT_ALT S  &hm LCTRL D          &hm LEFT_SHIFT T     &kp J               &kp LEFT  &kp ENTER  &kp RIGHT       &kp H          &hm RSHIFT N      &hm RCTRL E      &hm RIGHT_ALT L  &hm RGUI P              &kp DOWN_ARROW
-&kp LC(Z)      &kp Z           &kp X           &kp C                &ltq 3 V             &kp B       &kp SPACE              &kp DOWN              &kp K          &ltq 2 M          &kp F4           &kp QUESTION     &hm SEMICOLON ASTRK     &kp ESC
+&kp LC(Z)      &kp Z           &kp X           &kp C                &ltq 3 V             &kp B       &kp SPACE              &kp DOWN              &kp K          &ltq 2 M          &mo 2           &kp QUESTION     &hm SEMICOLON ASTRK     &kp ESC
                                                &kp LS(ENTER)        &sl 1                &mt LSHIFT ENTER                                         &kp BACKSPACE  &kp SPACE         &ltq 2 TAB
             >;
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -106,9 +106,9 @@
         symbol_layer_1 {
             display-name = "SYMBOL";
             bindings = <
-&trans      &kp TILDE  &kp AT_SIGN  &kp LBKT  &kp RBKT  &kp PIPE                                        &mmv MOVE_UP                     &trans            &kp PLUS          &kp MINUS     &kp SLASH          &kp BSLH          &trans
-&trans      &kp HASH   &kp PERCENT  &kp LPAR  &kp RPAR  &kp EQUAL                       &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp EXCLAMATION   &kp COMMA         &kp PERIOD    &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE  &three_quotes
-&trans      &kp DOLLAR &kp CARET    &kp LBRC  &kp RBRC  &trans            &kp C_MUTE                    &mmv MOVE_DOWN                   &kp AMPERSAND     &two_dash         &kp LESS_THAN &kp GREATER_THAN   &kp COLON         &trans
+&kp LEFT_ARROW &kp TILDE  &kp AT_SIGN  &kp LBKT  &kp RBKT  &kp RIGHT_ARROW                                   &mmv MOVE_UP                     &trans            &kp PLUS          &kp MINUS     &kp SLASH          &kp BSLH          &trans
+&trans         &kp HASH   &kp PERCENT  &kp LPAR  &kp RPAR  &kp EQUAL                         &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp EXCLAMATION   &kp COMMA         &kp PERIOD    &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE  &three_quotes
+&trans         &kp DOLLAR &kp CARET    &kp LBRC  &kp RBRC  &kp PIPE            &kp C_MUTE                    &mmv MOVE_DOWN                   &kp AMPERSAND     &two_dash         &kp LESS_THAN &kp GREATER_THAN   &kp COLON         &trans
                                     &kp LC(C) &kp LC(C) &kp LC(V)                                                                        &trans            &kp UNDERSCORE    &trans
             >;
             sensor-bindings = <&scroll_encoder>;
@@ -128,7 +128,7 @@
         layer_3 {
             display-name = "Fn";
             bindings = <
-&bootloader        &bt BT_SEL 0   &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &trans                                  &mmv MOVE_UP                     &trans  &kp LS(LG(N4)) &trans    &trans  &trans  &trans
+&bootloader        &bt BT_SEL 0   &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &trans                                  &mmv MOVE_UP                     &trans  &kp LS(LG(N4)) &kp F4    &trans  &trans  &trans
 &trans             &bt BT_CLR     &trans        &trans        &trans        &trans                   &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT &trans  &kp LC(F)      &kp HOME  &kp END &trans  &trans
 &ext_power EP_OFF  &studio_unlock &bootloader   &trans        &trans        &trans  &kp C_MUTE                    &mmv MOVE_DOWN                     &trans  &trans         &trans    &trans  &trans  &trans
                                                &trans        &trans        &trans                                                                   &trans  &trans         &trans
